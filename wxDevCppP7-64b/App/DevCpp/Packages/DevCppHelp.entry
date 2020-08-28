@@ -1,0 +1,8 @@
+[Setup]
+AppName=Dev-C++ Help
+AppVersion=7.4.2
+Description=wxDev-C++ Help File
+Url=
+
+[Files]
+Help\devcpp.chm

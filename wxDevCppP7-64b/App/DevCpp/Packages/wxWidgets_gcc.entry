@@ -1,0 +1,16 @@
+[Setup]
+AppName=wxWidgets Mingw gcc
+AppVersion=2.9.3.5
+Description=wxWidgets monolithic, unicode Mingw gcc build
+Url=http://www.wxwidgets.org
+
+[Files]
+lib\wx\gcc_lib\libwxexpat.a
+lib\wx\gcc_lib\libwxjpeg.a
+lib\wx\gcc_lib\libwxmsw29u.a
+lib\wx\gcc_lib\libwxmsw29u_gl.a
+lib\wx\gcc_lib\libwxpng.a
+lib\wx\gcc_lib\libwxregexu.a
+lib\wx\gcc_lib\libwxscintilla.a
+lib\wx\gcc_lib\libwxtiff.a
+lib\wx\gcc_lib\libwxzlib.a

@@ -1,0 +1,2 @@
+Note:
+to install updates, updater and packager need to be run directly from disk (avoiding the launch from inside wxDevcpp)

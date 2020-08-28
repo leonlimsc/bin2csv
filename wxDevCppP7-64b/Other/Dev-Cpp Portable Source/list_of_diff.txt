@@ -1,0 +1,50 @@
+wxdevcpp_portable
+
+wxDevCppPortable7\credits and improvements.txt
+wxDevCppPortable7\history.txt
+DIR wxDevCppPortable7\Other\Dev-Cpp Portable Source
+
+
+in wxDevCppPortable7\Data
+aggiungere a (wx)devcpp.ini la parte relativa ai descrittori dei compilatori
+- ed i files devcpp.cfg devhelp.ini e RubyBlue.syntax
+
+(Devpacks: directory dei devpack aggiuntivi)
+in wxDevCppPortable7\App\Devcpp\include\
+aggiunto il devpack 
+wxDevCppPortable7\App\Devcpp\include\wxctb
+[Setup]
+AppName=wxCTB
+AppVersion=0.8
+Description=A cross-platform serial port communication library
+Url=http://www.iftools.com/extras.en.html
+
+[Files]
+Templates\wxWidgets with wxCTB.ico
+Templates\wxWidgets with wxCTB.project.ico
+Templates\wxWidgets with wxCTB.template
+include\wx\ctb\ctb.h
+include\wx\ctb\expect.h
+include\wx\ctb\getopt.h
+include\wx\ctb\gpib.h
+include\wx\ctb\gpibx.h
+include\wx\ctb\iobase.h
+include\wx\ctb\match.h
+include\wx\ctb\serport.h
+include\wx\ctb\serportx.h
+include\wx\ctb\timer.h
+include\wx\ctb\wxctb.h
+include\wx\ctb\linux\gpib.h
+include\wx\ctb\linux\serport.h
+include\wx\ctb\linux\timer.h
+include\wx\ctb\win32\getopt.h
+include\wx\ctb\win32\gpib-32.h
+include\wx\ctb\win32\gpib.h
+include\wx\ctb\win32\serport.h
+include\wx\ctb\win32\timer.h
+lib\libwxctb.a
+docs\spmdwx.pdf
+wx\samples\ctb\ctbtest.cpp
+wx\samples\ctb\CTB_Test.dev
+wx\samples\ctb\CTB_Test.layout
+wx\samples\ctb\Makefile.win

@@ -1,0 +1,14 @@
+//---------------------------------------------------------------------------
+//
+// Name:        %PROJECT_NAME%App.rc
+// Author:      %AUTHOR_NAME%
+// Created:     %DATE_STRING%
+// Description: 
+//
+//---------------------------------------------------------------------------
+
+#ifdef _WIN64
+#define WX_CPU_AMD64
+#endif
+
+#include <wx/msw/wx.rc>

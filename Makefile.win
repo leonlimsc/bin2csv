@@ -1,0 +1,46 @@
+# Project: bin_2_csv
+# Compiler: Default GCC compiler
+# Compiler Type: MingW 3
+# Makefile created by wxDev-C++ IDE 7.4.2.569 on 28/08/20 16:35
+
+WXLIBNAME = wxmsw29u
+CPP       = g++.exe
+CC        = gcc.exe
+WINDRES   = "windres.exe"
+OBJ       = Objects/MingW/main.o Objects/MingW/bin_2_csv.o Objects/MingW/input_for_bin.o
+LINKOBJ   = "Objects/MingW/main.o" "Objects/MingW/bin_2_csv.o" "Objects/MingW/input_for_bin.o"
+LIBS      = -L"C:/tmp/bin2csv/wxDevCppP7-64b/App/devcpp/lib/wx/gcc_lib" -L"C:/tmp/bin2csv/wxDevCppP7-64b/App/devcpp/lib" -L"C:/tmp/bin2csv/wxDevCppP7-64b/App/devcpp/MinGW32/lib"  
+INCS      = -I"C:/tmp/bin2csv/wxDevCppP7-64b/App/devcpp/MinGW32/include"
+CXXINCS   = -I"C:/tmp/bin2csv/wxDevCppP7-64b/App/devcpp/MinGW32/include" -I"C:/tmp/bin2csv/wxDevCppP7-64b/App/devcpp/" -I"C:/tmp/bin2csv/wxDevCppP7-64b/App/devcpp/include/common" -I"C:/tmp/bin2csv/wxDevCppP7-64b/App/devcpp/include"
+RCINCS    = --include-dir "C:/tmp/bin2csv/WXDEVC~1/App/devcpp/include/common"
+BIN       = Output/MingW/bin_2_csv.exe
+DEFINES   = 
+CXXFLAGS  = $(CXXINCS) $(DEFINES)  
+CFLAGS    = $(INCS) $(DEFINES) -std=c99  
+GPROF     = gprof.exe
+ifeq ($(OS),Windows_NT)
+   RM = del /Q
+   FixPath = $(subst /,\,$1)
+else
+   RM = rm -f
+   FixPath = $1
+endif
+LINK      = g++.exe
+
+.PHONY: all all-before all-after clean clean-custom
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	$(RM) $(call FixPath,$(LINKOBJ)) "$(call FixPath,$(BIN))"
+
+$(BIN): $(OBJ)
+	$(LINK) $(LINKOBJ) -o "$(BIN)" $(LIBS) 
+
+Objects/MingW/main.o: $(GLOBALDEPS) main.c
+	$(CC) -c main.c -o Objects/MingW/main.o $(CFLAGS)
+
+Objects/MingW/bin_2_csv.o: $(GLOBALDEPS) bin_2_csv.c
+	$(CC) -c bin_2_csv.c -o Objects/MingW/bin_2_csv.o $(CFLAGS)
+
+Objects/MingW/input_for_bin.o: $(GLOBALDEPS) input_for_bin.c
+	$(CC) -c input_for_bin.c -o Objects/MingW/input_for_bin.o $(CFLAGS)

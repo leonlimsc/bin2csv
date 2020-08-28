@@ -1,0 +1,29 @@
+[Setup]
+AppName=Dev-C++ Templates
+AppVersion=7.0.3
+Description=Contains the (non-wxWidget) template files used for Dev-C++.
+Url=
+
+[Files]
+Templates\1-WinApp.template
+Templates\2-ConsoleApp.template
+Templates\3-StaticLib.template
+Templates\4-DLL.template
+Templates\ConsoleApp_c.txt
+Templates\ConsoleApp_cpp.txt
+Templates\Dll_c.txt
+Templates\Dll_cpp.txt
+Templates\Dll_h.txt
+Templates\Dll_hpp.txt
+Templates\Hello.ico
+Templates\Hello.template
+Templates\Hello_c.txt
+Templates\Hello_cpp.txt
+Templates\OpenGL.ico
+Templates\OpenGL.template
+Templates\OpenGL.txt
+Templates\StaticFuncsLib.c.txt
+Templates\StaticFuncsLib.cpp.txt
+Templates\StaticFuncsLibc.h.txt
+Templates\StaticFuncsLibcpp.h.txt
+Templates\WinApp_c.txt

@@ -1,0 +1,42 @@
+wxDev-C++ Portable 
+http://wxdsgn-portable.sourceforge.net/
+
+12.06.19
+-added 'GCC for DLL' and 'GCC 64 bit for DLL' profile
+
+12.06.18
+-added wxctb 0.9
+
+12.06.15
+-added 64bit support
+-added gcc-tdm64 GCC 4.6 Series 
+-added wxWidgets-2.9.3-64
+-added Profile MingW64 gcc for 64bit projects
+-added 64bit support in wxprojRes.rc 
+ #ifdef _WIN64
+ #define WX_CPU_AMD64
+ #endif
+
+12.05.30
+- deployed R4 for V7.4.2
+  for wxwidgets 2.9.3, TDM-GCC MinGW 4.6.1 and with wxctb 0.8
+  (added clean Tool)
+- code completion pre-built
+- Language pre-selected: English 
+  to change it just change
+  Language="English.lng" 
+  in devcpp.ini in Data Folder (NB before launching the app)
+- added RubyBlue highlight Style  
+
+09.09.20
+- deployed RC1 for V7
+  .to ceck precompiling
+  
+09.08.17
+-deployed beta1.0
+09.08.23
+-deployed beta1.2
+ 
+
+Hoping that this project can be a useful tool for developers :)
+Maurice

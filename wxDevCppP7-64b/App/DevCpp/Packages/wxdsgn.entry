@@ -1,0 +1,8 @@
+[Setup]
+AppName=wxdsgn
+AppVersion=7.4.2.72
+Description=The wxWidgets RAD designer plugin for wxDev-C++
+Url=http://wxdsgn.sourceforge.net/
+
+[Files]
+plugins\wxdsgn\wxdsgn.bpl

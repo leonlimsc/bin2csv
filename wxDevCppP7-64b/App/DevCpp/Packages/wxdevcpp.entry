@@ -1,0 +1,13 @@
+[Setup]
+AppName=wxDev-C++
+AppVersion=7.4.2.569
+Description=The wxDev-C++ IDE.
+Url=http://wxdsgn.sourceforge.net/
+
+[Files]
+devcpp.exe
+Lang\English.lng
+Lang\English.tips
+rtl60.bpl
+updater.exe
+vcl60.bpl

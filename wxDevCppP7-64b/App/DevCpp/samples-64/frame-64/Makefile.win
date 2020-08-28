@@ -1,0 +1,46 @@
+# Project: Project1
+# Compiler: GCC for DLL 64 bit
+# Compiler Type: MingW 3
+# Makefile created by wxDev-C++ IDE 7.4.2.569 on 19/06/12 10:36
+
+WXLIBNAME = wxmsw29u
+CPP       = g++.exe
+CC        = gcc.exe
+WINDRES   = "windres.exe"
+OBJ       = Objects/MingW/Project1App.o Objects/MingW/Project1Frm.o Objects/MingW/Project1_private.res
+LINKOBJ   = "Objects/MingW/Project1App.o" "Objects/MingW/Project1Frm.o" Objects/MingW/Project1_private.res
+LIBS      = -L"C:/wxDevCppP7-64b/App/devcpp/lib64_dll/wx/gcc_dll" -L"C:/wxDevCppP7-64b/App/devcpp/lib64_dll" -L"C:/wxDevCppP7-64b/App/devcpp/MinGW64/lib" -mwindows -l$(WXLIBNAME) -lwxpng -lwxzlib -lwxregexu -lwxexpat -lkernel32 -luser32 -lgdi32 -lcomdlg32 -lwinspool -lwinmm  -lshell32 -lcomctl32 -lole32 -loleaut32 -luuid -lrpcrt4 -ladvapi32 -lwsock32 -lwininet  
+INCS      = -I"C:/wxDevCppP7-64b/App/devcpp/MinGW64/include"
+CXXINCS   = -I"C:/wxDevCppP7-64b/App/devcpp/MinGW64/include" -I"C:/wxDevCppP7-64b/App/devcpp" -I"C:/wxDevCppP7-64b/App/devcpp/include64_dll" -I"C:/wxDevCppP7-64b/App/devcpp/lib64_dll/wx/gcc_dll/mswu"
+RCINCS    = --include-dir "C:/WXC7CA~1/App/devcpp/INCLUD~3"
+BIN       = Output/MingW/Project1.exe
+DEFINES   = -D__WXMSW__ -D__GNUWIN64__ -D_UNICODE -DWXUSINGDLL
+CXXFLAGS  = $(CXXINCS) $(DEFINES)  
+CFLAGS    = $(INCS) $(DEFINES)  
+GPROF     = gprof.exe
+ifeq ($(OS),Windows_NT)
+   RM = del /Q
+   FixPath = $(subst /,\,$1)
+else
+   RM = rm -f
+   FixPath = $1
+endif
+LINK      = g++.exe
+
+.PHONY: all all-before all-after clean clean-custom
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	$(RM) $(call FixPath,$(LINKOBJ)) "$(call FixPath,$(BIN))"
+
+$(BIN): $(OBJ)
+	$(LINK) $(LINKOBJ) -o "$(BIN)" $(LIBS) 
+
+Objects/MingW/Project1App.o: $(GLOBALDEPS) Project1App.cpp
+	$(CPP) -c Project1App.cpp -o Objects/MingW/Project1App.o $(CXXFLAGS)
+
+Objects/MingW/Project1Frm.o: $(GLOBALDEPS) Project1Frm.cpp
+	$(CPP) -c Project1Frm.cpp -o Objects/MingW/Project1Frm.o $(CXXFLAGS)
+
+Objects/MingW/Project1_private.res: Objects/MingW/Project1_private.rc Project1App.rc 
+	$(WINDRES) --input-format=rc -o Objects/MingW/Project1_private.res $(RCINCS) Objects/MingW/PROJEC~1.RC -O coff

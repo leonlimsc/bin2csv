@@ -1,0 +1,17 @@
+{
+    "files.exclude": {
+        "*.bat": true,
+        "*.bin": true,
+        "*.dev": true,
+        "*.exe": true,
+        "*.ini": true,
+        "*.layout": true,
+        "*.lnk": true,
+        "*.win": true,
+        "**/.vscode": true,
+        "**/bak": true,
+        "**/Objects": true,
+        "**/Output": true,
+        "wxDevCppP7-64b": true
+    }
+}

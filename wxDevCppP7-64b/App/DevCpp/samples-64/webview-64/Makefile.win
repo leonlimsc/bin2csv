@@ -1,0 +1,40 @@
+# Project: Project1
+# Compiler: GCC compiler 64 bit
+# Compiler Type: MingW 3
+# Makefile created by wxDev-C++ IDE 7.4.2.569 on 19/06/12 10:56
+
+WXLIBNAME = wxmsw29u
+CPP       = g++.exe
+CC        = gcc.exe
+WINDRES   = "windres.exe"
+OBJ       = Objects/MingW/webview.o
+LINKOBJ   = "Objects/MingW/webview.o"
+LIBS      = -L"C:/wxDevCppP7-64b/App/devcpp/lib64/wx/gcc_lib" -L"C:/wxDevCppP7-64b/App/devcpp/lib64" -L"C:/wxDevCppP7-64b/App/devcpp/MinGW64/lib" -mwindows -l$(WXLIBNAME) -l$(WXLIBNAME)_gl -lwxscintilla -lwxtiff -lwxjpeg -lwxpng -lwxzlib -lwxregexu -lwxexpat -lkernel32 -luser32 -lgdi32 -lcomdlg32 -lwinspool -lwinmm -lshell32 -lcomctl32 -lole32 -loleaut32 -luuid -lrpcrt4 -ladvapi32 -lwsock32 -lodbc32 -lopengl32  
+INCS      = -I"C:/wxDevCppP7-64b/App/devcpp/MinGW64/include"
+CXXINCS   = -I"C:/wxDevCppP7-64b/App/devcpp/MinGW64/include" -I"C:/wxDevCppP7-64b/App/devcpp" -I"C:/wxDevCppP7-64b/App/devcpp/include64" -I"C:/wxDevCppP7-64b/App/devcpp/lib64"
+RCINCS    = --include-dir "C:/WXC7CA~1/App/devcpp/INCLUD~1"
+BIN       = Output/MingW/dialogs.exe
+DEFINES   = -D__WXMSW__ -D__GNUWIN64__ -D_UNICODE
+CXXFLAGS  = $(CXXINCS) $(DEFINES)  
+CFLAGS    = $(INCS) $(DEFINES)  
+GPROF     = gprof.exe
+ifeq ($(OS),Windows_NT)
+   RM = del /Q
+   FixPath = $(subst /,\,$1)
+else
+   RM = rm -f
+   FixPath = $1
+endif
+LINK      = g++.exe
+
+.PHONY: all all-before all-after clean clean-custom
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	$(RM) $(call FixPath,$(LINKOBJ)) "$(call FixPath,$(BIN))"
+
+$(BIN): $(OBJ)
+	$(LINK) $(LINKOBJ) -o "$(BIN)" $(LIBS) 
+
+Objects/MingW/webview.o: $(GLOBALDEPS) webview.cpp
+	$(CPP) -c webview.cpp -o Objects/MingW/webview.o $(CXXFLAGS)

@@ -1,0 +1,38 @@
+wxDev-C++ Portable + Unicode support + Precompiled option + DLL compiler option
+http://wxdsgn-portable.sourceforge.net/
+
+wxDev-C++ Portable is directly derived from the following projects:
+
+Dev-C++ Portable
+http://sourceforge.net/projects/devcpp-portable/
+
+DevC++
+http://sourceforge.net/projects/dev-cpp/files/
+
+wxDev-C++
+http://wxdsgn.sourceforge.net/
+http://wxdsgn.svn.sourceforge.net/viewvc/wxdsgn/
+
+The improvements are related to:
+-portable on the go!
+-support for wxDev-C++ version 7 
+-added 64bit compile support
+-added 32 and 64 bit compilation with DLL option (executable smaller, but need to distribute DLLs)
+
+and is based also on:
+
+wxWidgets
+http://www.wxwidgets.org/
+
+wxctb
+http://sourceforge.net/projects/wxcode/files/Components/wxctb-0.9/
+
+mingw64
+http://tdm-gcc.tdragon.net/
+
+AutoIt
+http://www.autoitscript.com/autoit3/index.shtml
+
+Hoping that this project can be a useful tool for developers :)
+
+

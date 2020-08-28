@@ -1,0 +1,32 @@
+The source can be found at:
+
+7-zip
+http://www.7-zip.org/
+
+AutoIt
+http://www.autoitscript.com/autoit3/index.shtml
+
+DevC++
+http://sourceforge.net/projects/dev-cpp/files/
+
+Dev-C++ Portable
+http://sourceforge.net/projects/devcpp-portable/
+
+wxDev-C++
+http://wxdsgn.sourceforge.net/
+http://wxdsgn.svn.sourceforge.net/viewvc/wxdsgn/
+
+wxMagenta  (wxWidgets Unicode DevPack and Project)
+http://sourceforge.net/projects/wxmagenta/files/
+
+wxWidgets
+http://www.wxwidgets.org/
+
+wxPack
+http://wxpack.sourceforge.net/
+
+Precompiler Option
+http://wiki.wxwidgets.org/Precompiled_Headers
+
+wxDev-C++ Portable + Unicode support + Precompiled option + DLL compiler option
+http://wxdsgn-portable.sourceforge.net/
